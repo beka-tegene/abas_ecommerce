@@ -1,8 +1,8 @@
 import React from 'react'
-
+import style from './Subscribe.module.css'
 const Subscribe = () => {
   return (
-    <div>Subscribe</div>
+    <div className={style.container}>Subscribe</div>
   )
 }
 

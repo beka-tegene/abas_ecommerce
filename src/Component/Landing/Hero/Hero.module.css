@@ -1,10 +1,10 @@
 .container {
   width: 100%;
-  padding: 1rem 7%;
+  padding: 2rem 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .advertisement {
   color: white;
@@ -14,21 +14,136 @@
   align-items: flex-start;
   justify-content: space-between;
   border-radius: 15px;
-  overflow: hidden;
+  position: relative;
+  flex-wrap: wrap;
 }
 .photo {
-  display: flex;
-  position: relative;
-}
-.photo img:nth-child(2) {
-  position: absolute;
-  top: 20px;
-  left: 50px;
+  padding: 1rem 3rem;
 }
 .text {
-  padding: 1rem;
+  padding: 1rem 3rem;
+}
+.text h3 {
+  font-size: 30px;
+  font-weight: 100;
+  padding: 1rem 0;
+}
+.text h1 {
+  font-size: 64px;
+  font-weight: 600;
+  padding: 1rem 0;
+}
+.text h1 span {
+  font-size: 24px;
+  font-weight: 100;
 }
 .discount {
   color: white;
   background-color: #212844;
+}
+.before,
+.next {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 7px solid white;
+  background-color: #f3f9fb;
+  font-weight: 900;
+  color: #008ecc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.before {
+  left: -35px;
+}
+.next {
+  right: -35px;
+}
+
+.discount {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 15px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.info h2 {
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 600;
+}
+.info h5 {
+  color: #8c8c8c;
+  font-weight: 100;
+}
+.info2 {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.limited {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.limited h3 {
+  font-size: 20px;
+  font-weight: 100;
+  font-style: italic;
+}
+.limit {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.limit span {
+  font-size: 40px;
+  font-weight: 400;
+}
+.limit span:first-child {
+  text-decoration: line-through;
+}
+.date {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.days h4 {
+  font-size: 30px;
+}
+.days span {
+  font-size: 14px;
+}
+.days:last-child {
+  color: #ffffff41;
+}
+.days:nth-child(3) {
+  color: #ffffff7c;
+}
+.days:nth-child(2) {
+  color: #ffffffc0;
+}
+
+.days:first-child {
+  color: #ffffff;
 }
